@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team-1 me</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        /* 여백, 패딩 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 페이지 전체 색깔, 내부 여백 */
+        body {
+            font-family: 'Cafe24Supermagic-Bold-v1.0', Arial, sans-serif;
+            background-color: #FFF6EC;
+            margin: 0;
+        }
+
+
+        #team-me {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        /* 내 사진 들어있는 네모 */
+        .info1 {
+            position: relative;
+            text-align: center;
+            width: 380px;
+            height: 515px;
+            padding: 17px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* 내 사진 설정 */
+        .info1 img {
+            width: 200px;
+            height: 200px;
+            border-radius: 6%;
+            object-fit: cover;
+        }
+
+        .my-info {
+            height: 205px;
+            padding: 20px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin-top: 20px;
+
+        }
+
+        .my-info h3 {
+            text-align: center;
+            font-size: 42px;
+
+        }
+
+        .my-info p {
+            text-align: left;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        /* 내 자세한 소개 들어있는 네모 */
+        .info2 {
+            width: 600px;
+            height: 780px;
+            padding: 17px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        /* 네모 안 네모 */
+        .sub-info {
+            height: 250;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .sub-info h4 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sub-info p {
+            font-size: 18px;
+        }
+
+        .sub-info2 {
+            height: 250;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .sub-info2 h5 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sub-info2 p {
+            font-size: 18px;
+        }
+
+        .sub-info3 {
+            height: 250;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .sub-info3 h6 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sub-info3 p {
+            font-size: 18px;
+        }
+
+        .sub-info4 {
+            height: 250;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .sub-info4 h6 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sub-info4 p {
+            font-size: 18px;
+        }
+
+        /* 블로그, 깃 허브로 가는 버튼 */
+        #my-btn {
+            position: absolute;
+            background-color: #FFBDD6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transform: translate(20%, 30%);
+        }
+
+        #my-btn:hover {
+            background-color: #FFBDD6;
+        }
+
+        #my-btn2 {
+            position: absolute;
+            background-color: #FFBDD6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transform: translate(-130%, 30%);
+        }
+
+        #my-btn2:hover {
+            background-color: #FFBDD6;
+        }
+
+        nav {
+            background-color: #ffbdd6;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 30px 60px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        nav a:hover {
+            background-color: #e4deff;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="location.href='Index.html'">Ko bie</a>
+        <a href="#" onclick="location.href='amuamu7.html'">팀</a>
+        <a href="#" onclick="location.href='guest.html'">방명록</a>
+    </nav>
+    <div id="team-me">
+        <div class="info1">
+            <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06DZV9Q3R7-674927aa84a1-512" alt="이름1">
+            <div class="my-info">
+                <h3>박주빈</h3>
+                <p>
+                    안녕하세요.<br />
+                    Kotlin 2기 박주빈입니다.<br />
+                    따라가는 속도가 많이 느리지만,<br />
+                    여러분들과 같이 목표를 이루고 싶습니다! <br />
+                    <br />
+                </p>
+            </div>
+            <div> <a href="https://murekal.tistory.com/" target="_blank" id="my-btn">블로그로 이동</a>
+                <a href="https://github.com/DanDanjoo" target="_blank" id="my-btn2" style="margin-left:10px;">깃허브로
+                    이동</a>
+            </div>
+        </div>
+        <div class="info2">
+            <div class="sub-info">
+                <h4>나의 MBTI와 성격은?</h4>
+                <p>
+                    MBTI : ENFP<br />
+                    활동적인 것을 좋아하고 특히 맛집에 가는 것을 좋아합니다.<br />
+                    사람들과 소통하고 배워가는 과정을 좋아합니다. <br />
+
+                </p>
+            </div>
+            <div class="sub-info2">
+                <h5>나의 최고의 장점은?</h5>
+                <p>
+                    실패에 금방 스스로를 탓하지만,<br />
+                    너무 제 스스로를 아릴 정도로 하지 않으려고 합니다.<br />
+                    사람들에게 애너지를 얻고 저 또한 애너지를 주는 것이 장점이라고 생각합니다. <br />
+
+                </p>
+
+            </div>
+            <div class="sub-info3">
+                <h6>나의 업무 스타일은?</h6>
+                <p>
+                    아이디어가 항상 떠오르지만,<br />
+                    팀원들과 조율하고 더 좋은 결과물을 만드는것을 더 좋아합니다. <br />
+                    조율과 협업이 저의 업무 모토입니다. <br />
+                </p>
+
+            </div>
+            <div class="sub-info4">
+                <h6>내가 좋아하는 명언은?</h6>
+                <p>
+                    - 피레 찰론<br />
+                    은혜를 입은 자는 잊지 말아야 하고 베푼자는 기억하지 말아야 한다. <br />
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>

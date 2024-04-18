@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>team-1</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        /* 여백, 패딩 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 페이지 전체 색깔, 내부 여백 */
+        body {
+            font-family: 'Cafe24Supermagic-Bold-v1.0', Arial, sans-serif;
+            background-color: #FFF6EC;
+            margin: 0;
+        }
+
+        /* 팀원 사진 들어있는 네모들 */
+        #team-1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        /* 팀원 사진 들어있는 네모 */
+        .team-member {
+            text-align: center;
+            width: calc(330px - 20px);
+            height: 380px;
+            padding: 17px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            /* 아래 여백 추가 */
+
+        }
+
+        /* 팀원 프사 설정 */
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            /* 동글동글하게 */
+            object-fit: cover;
+            /* 이미지 맞게 설정 */
+        }
+
+        /* 각 팀원 정보 내용 설정 */
+        .member-info {
+            margin-top: 10px;
+            /* 위 여백 설정 */
+        }
+
+        #team-info {
+            width: 100%;
+            max-width: 1800px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            /* 동글동글하게 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 150px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            /* 좌측 마진 값 오토 가운데 정렬 */
+            margin-right: auto;
+            /* 우측 마진 값 오토 가운데 정렬 */
+            padding: 30px;
+            /* 내부 여백 추가 */
+            text-align: left;
+            /* 왼쪽정렬 */
+        }
+
+        .info {
+            margin-right: all;
+
+        }
+
+        .team-member h3 {
+            margin-bottom: 10px;
+            font-size: 29px;
+            /* 이름 여백, 텍스트 크기 조절 */
+        }
+
+        .team-member p {
+            text-align: left;
+            /* 텍스트를 왼쪽 정렬 */
+            font-size: 18px;
+            /* 글자 크기 조정 */
+            line-height: 1.5;
+            /* 줄 간격 설정 */
+            margin-bottom: 0;
+            /* 아래 여백 제거 */
+        }
+
+        #team-info h6 {
+            text-align: center;
+            font-size: 72px;
+
+
+        }
+
+        #team-info p {
+            text-align: center;
+            font-size: 32px;
+            line-height: 1.6;
+            margin-top: 30px;
+        }
+
+        nav {
+            background-color: #ffbdd6;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 30px 60px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        nav a:hover {
+            background-color: #e4deff;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="location.href='Index.html'">Ko bie</a>
+        <a href="#" onclick="location.href='amuamu7.html'">팀</a>
+        <a href="#" onclick="location.href='guest.html'">방명록</a>
+    </nav>
+
+    <div id="team-1">
+        <div class="team-member">
+            <a href="amumumu.html">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06DZV9Q3R7-674927aa84a1-512" alt="이름1">
+            </a>
+            <div class="member-info">
+                <h3>박주빈</h3>
+                <p>
+                    취미 : 운동<br />
+                    MBTI : ENFP<br />
+                    한마디 : 중요한 건 꺾여도 하는 마음 <br />
+                    TMI : 운동 쉬고 있음<br />
+                </p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="ha.html">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06LBCENL1Z-85fcf6858cdb-192" alt="이름2">
+            </a>
+            <div class="member-info">
+                <h3>하지호</h3>
+                <p>
+                    취미 : 영화보기 <br />
+                    MBTI : ISTP<br />
+                    한마디 : 오늘 할 일을 내일로 미루지 말자 <br />
+                    TMI : 어제 영화 세 편봄 <br />
+                </p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="https://naver.com">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06TBU8CRGF-ca70e29f4bd6-192" alt="이름3">
+            </a>
+            <div class="member-info">
+                <h3>최현규</h3>
+                <p>
+                    취미 : 독서<br />
+                    MBTI : INTJ<br />
+                    한마디 : 끝까지 간다 <br />
+                    TMI : - <br />
+                </p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="han.html">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06NTKSN5CJ-ec0e721cf435-192" alt="이름4">
+            </a>
+            <div class="member-info">
+                <h3>한동현</h3>
+                <p>
+                    취미 : 게임 <br />
+                    MBTI : INTP<br />
+                    한마디 : 안돼도 일단 박치기 <br />
+                    TMI : 집돌이 <br />
+                </p>
+            </div>
+        </div>
+        <div class="team-member">
+            <a href="jang.html">
+                <img src="https://ca.slack-edge.com/T06B9PCLY1E-U06NVBLH9FA-365d628c1140-512" alt="이름5">
+            </a>
+            <div class="member-info">
+                <h3>정재범</h3>
+                <p>
+                    취미 : 드라마/책 몰아보기 <br />
+                    MBTI : INTP<br />
+                    한마디 : 안돼도 한 다음 고칩니다 <br />
+                    TMI : 30보 이상 택시 <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="team-info">
+        <h6>우리 팀의 목표는?</h6>
+        <p> 1. 프로젝트 외 개인 공부에 힘쓰기<br />
+            2. 팀원간 자주 소통하기<br />
+            3. 정확한 기술 구현에 힘쓰기<br />
+            4. 코틀린 뉴비 탈출 (가장중요)<br />
+        <p>
+    </div>
+</body>
